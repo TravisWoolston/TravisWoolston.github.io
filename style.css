@@ -88,6 +88,13 @@ body {
 /* Focus styles for links */
 a:focus-visible { outline: 3px solid #7C89FF; outline-offset: 2px; border-radius: 8px; }
 
+/* Media grid (postmortem gallery) */
+.media-grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 12px; }
+.media-grid img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); background:#0F111A; }
+@media (min-width: 901px) { .media-grid img { grid-column: span 4; } }
+@media (max-width: 900px) { .media-grid img { grid-column: span 6; height: 200px; } }
+@media (max-width: 520px) { .media-grid img { grid-column: span 12; height: 180px; } }
+
 /* Small screens */
 @media (max-width: 768px) {
   .header-inner { flex-direction: column; align-items: flex-start; gap: 12px; }

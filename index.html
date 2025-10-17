@@ -3,62 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Travis Woolston - Professional Game Developer Portfolio">
+    <meta name="description" content="Professional Game Developer Portfolio for Travis Woolston. UE5 and Unity projects: Virus Hunter, Automatic Planet, Data Diver, Rogue Tire, Webber, Nano Blitz. Devlogs and playable embeds.">
+    <meta property="og:title" content="Travis Woolston | Game Developer">
+    <meta property="og:description" content="UE5/Unity developer focused on gameplay, AI, and automation design. View projects, play in browser, and watch devlogs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://traviswoolston.github.io/">
     <title>Travis Woolston | Game Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Travis Woolston</h1>
-            <p class="tagline">Game Developer</p>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img class="avatar" src="images/profile-photo.png" alt="Portrait of Travis Woolston">
+                <div>
+                    <h1 class="site-title">Travis Woolston</h1>
+                    <p class="tagline">Game Developer • UE5 • Unity • AI/Gameplay</p>
+                </div>
+            </div>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#projects">Projects</a>
+                <a href="#automatic-planet">Automatic Planet</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About</a>
+                <a href="#links">Links</a>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="container">
+                <div class="hero-copy">
+                    <h2>Designing systems, building worlds.</h2>
+                    <p>I craft responsive gameplay systems, AI, and automation-focused mechanics. Currently developing <strong>Automatic Planet</strong>, an automation puzzle game inspired by Opus Magnum and Factorio.</p>
+                    <div class="hero-ctas">
+                        <a class="btn" href="#projects">View Projects</a>
+                        <a class="btn btn-secondary" href="https://www.youtube.com/@traviswoolston8108" target="_blank" rel="noopener">Watch Devlogs</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="intro">
+    <main id="content">
+        <section id="projects" class="projects section">
             <div class="container">
-                <h2>About</h2>
-                <p>Welcome to my game development portfolio. I specialize in programming, AI development, and gameplay design.</p>
+                <h2 class="section-title">Projects</h2>
+                <div class="grid">
+                    <!-- Virus Hunter -->
+                    <article class="card project">
+                        <div class="card-media">
+                            <img src="images/virus-hunter/virus-hunter-cover-image.png" alt="Virus Hunter cover art" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Virus Hunter</h3>
+                            <p class="project-meta">Team of 4 • UE5 • Lead Programmer, Animation Integrator, AI Developer</p>
+                            <p class="project-desc">Dynamic virus-hunting action with AI-driven enemy behaviors and polished animation pipelines. I led core gameplay engineering, AI systems, and animation integration.</p>
+                            <div class="project-actions">
+                                <a class="btn" href="https://kratum.itch.io/virus-hunter" target="_blank" rel="noopener">Play on itch.io</a>
+                                <a class="btn btn-secondary" href="https://www.behance.net/gallery/233065669/Virus-Hunter-Team-Game-Build" target="_blank" rel="noopener">Behance Gallery</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Data Diver -->
+                    <article class="card project">
+                        <div class="card-media">
+                            <img src="images/data-diver/data-diver-exciting-gameplay.png" alt="Data Diver gameplay" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Data Diver</h3>
+                            <p class="project-meta">Team of 4 • UE5 • Lead Programmer, Gameplay Designer</p>
+                            <p class="project-desc">Exploration-focused systems and dive mechanics. I owned the gameplay architecture and collaborated on player feel and encounter pacing.</p>
+                            <div class="project-actions">
+                                <a class="btn" href="https://kratum.itch.io/data-diver" target="_blank" rel="noopener">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Rogue Tire -->
+                    <article class="card project">
+                        <div class="card-media">
+                            <img src="images/rogue-tire/rogue-tire-cover-image.png" alt="Rogue Tire cover image" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Rogue Tire</h3>
+                            <p class="project-meta">Solo • UE5 • Physics Simulation</p>
+                            <p class="project-desc">A physics-driven experiment exploring emergent motion and control within UE5.</p>
+                            <div class="project-actions">
+                                <a class="btn" href="https://kratum.itch.io/rogue-tire-leaderboard-test" target="_blank" rel="noopener">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Webber: 2D spider simulator -->
+                    <article class="card project">
+                        <div class="card-media">
+                            <img src="images/spider-sim/spider-sim-cover.png" alt="Webber 2D spider simulator cover" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Webber — 2D Spider Simulator</h3>
+                            <p class="project-meta">Solo • Unity • Browser</p>
+                            <p class="project-desc">Web physics and traversal in a minimalist, tactile 2D space.</p>
+                            <div class="embed-note">Playable embed below. If it doesn't load, use the button to open it on itch.io.</div>
+                            <div class="project-embed responsive-iframe">
+                                <!-- Note: For a fully playable inline embed, replace this iframe with the itch.io embed-upload iframe provided by your game's itch.io "Embed" panel. Using page URL as a fallback may be blocked by the browser. -->
+                                <iframe title="2D Spider Simulator (itch.io)" loading="lazy" src="https://kratum.itch.io/2d-spider-simulator" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn" href="https://kratum.itch.io/2d-spider-simulator" target="_blank" rel="noopener">Play in Browser on itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Nano Blitz -->
+                    <article class="card project">
+                        <div class="card-media">
+                            <img src="images/nano-blitz/nano-blitz-cover-image.png" alt="Nano Blitz cover image" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Nano Blitz</h3>
+                            <p class="project-meta">Solo • Unity • Browser</p>
+                            <p class="project-desc">Fast-paced micro-action prototype with tight loop and snappy feel.</p>
+                            <div class="project-actions">
+                                <a class="btn" href="https://kratum.itch.io/nano-blitz" target="_blank" rel="noopener">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="projects">
+        <!-- Automatic Planet section with playlist embed -->
+        <section id="automatic-planet" class="automatic-planet section">
             <div class="container">
-                <h2>Projects</h2>
-                
-                <div class="project-card">
-                    <h3>Virus Hunter</h3>
-                    <p class="project-role">Team project of 4 | Lead Programmer, Animation Integrator, and AI Developer</p>
-                    <p class="project-description">An exciting game where players hunt down viruses in a dynamic environment. As the lead programmer, I implemented core gameplay mechanics, integrated animations seamlessly, and developed sophisticated AI systems for enemy behavior.</p>
-                    <div class="project-links">
-                        <a href="https://kratum.itch.io/virus-hunter" target="_blank" rel="noopener noreferrer" class="btn">Play on itch.io</a>
-                        <a href="https://www.behance.net/gallery/233065669/Virus-Hunter-Team-Game-Build" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View Gallery on Behance</a>
-                    </div>
+                <h2 class="section-title">Automatic Planet — Devlog Playlist</h2>
+                <p class="section-lead">Solo project • Automation puzzle systems inspired by Opus Magnum and Factorio. Latest video in playlist is always shown.</p>
+                <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=U2TnRXTSQsfnWVIU&amp;list=PL6cCdXHQIImfah0H8aXMIH6vVziDRpeP6" title="Automatic Planet Devlog Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <h3>Data Diver</h3>
-                    <p class="project-role">Team project of 4 | Lead Programmer and Gameplay Designer</p>
-                    <p class="project-description">A compelling game experience focused on data exploration and diving mechanics. I led the programming efforts and designed the core gameplay systems to create an engaging player experience.</p>
-                    <div class="project-links">
-                        <a href="https://kratum.itch.io/data-diver" target="_blank" rel="noopener noreferrer" class="btn">Play on itch.io</a>
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <p>I specialize in gameplay programming, AI/behavior systems, and animation integration across Unreal Engine 5 and Unity. I enjoy building clear, extensible systems with strong player feel—especially in automation and simulation spaces.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="exp-grid">
+                    <div class="exp-highlights card">
+                        <div class="card-body">
+                            <h3 class="project-title">Highlights from Projects</h3>
+                            <ul class="exp-list">
+                                <li><strong>Lead Programmer, AI Developer</strong> — Virus Hunter (UE5): core gameplay systems, AI behavior trees, animation integration.</li>
+                                <li><strong>Lead Programmer, Gameplay Designer</strong> — Data Diver (UE5): gameplay architecture, player feel, encounter pacing.</li>
+                                <li><strong>Solo Developer</strong> — Automatic Planet: automation puzzle design and systems engineering.</li>
+                                <li><strong>Solo Developer</strong> — Rogue Tire (UE5): physics simulation and emergent control experiments.</li>
+                                <li><strong>Solo Developer</strong> — Webber (Unity): web physics, traversal mechanics; browser playable.</li>
+                                <li><strong>Solo Developer</strong> — Nano Blitz (Unity): tight action loop and responsive controls; browser playable.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exp-resume card">
+                        <div class="card-body">
+                            <h3 class="project-title">Resume (PDF)</h3>
+                            <p class="project-desc">View or download the complete resume. If the inline viewer doesn’t load, use the download button below.</p>
+                            <div class="doc-embed">
+                                <object data="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" type="application/pdf" aria-label="Travis Woolston Resume">
+                                    <p>PDF preview not available. <a href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
+                                </object>
+                            </div>
+                            <div class="project-actions" style="margin-top:12px;">
+                                <a class="btn btn-large" href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section id="links" class="contact section">
             <div class="container">
-                <h2>Links</h2>
+                <h2 class="section-title">Links</h2>
                 <div class="contact-links">
-                    <a href="https://kratum.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-large">itch.io Profile</a>
+                    <a href="https://kratum.itch.io/" target="_blank" rel="noopener" class="btn btn-large">itch.io Profile</a>
+                    <a href="https://www.youtube.com/@traviswoolston8108" target="_blank" rel="noopener" class="btn btn-large">YouTube — Devlogs</a>
+                    <a href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener" class="btn btn-large">Resume (PDF)</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <p>&copy; 2025 Travis Woolston. All rights reserved.</p>
         </div>

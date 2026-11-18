@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Game Developer Portfolio for Travis Woolston. UE5 and Unity projects: Virus Hunter, Automatic Planet, Data Diver, Rogue Tire, Webber, Nano Blitz. Devlogs and playable embeds.">
-    <meta property="og:title" content="Travis Woolston | Game Developer">
-    <meta property="og:description" content="UE5/Unity developer focused on gameplay, AI, and automation design. View projects, play in browser, and watch devlogs.">
+    <meta name="description" content="Travis Woolston — Gameplay &amp; AI Programmer (Unreal Engine 5 / C++). Alumni Arcade team projects Duality of Light and Dark, Mira and the Mirror Staff, and Pirate Cove, plus UE5 and Unity work: Virus Hunter, Automatic Planet, Data Diver, and more.">
+    <meta property="og:title" content="Travis Woolston | Gameplay &amp; AI Programmer">
+    <meta property="og:description" content="Gameplay and AI programmer specializing in Unreal Engine 5 and C++. Featured Alumni Arcade team projects, plus UE5 and Unity prototypes, devlogs, and a playable itch.io catalog.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://traviswoolston.github.io/">
-    <title>Travis Woolston | Game Developer</title>
+    <title>Travis Woolston | Gameplay &amp; AI Programmer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +22,11 @@
                 <img class="avatar" src="images/profile-photo.png" alt="Portrait of Travis Woolston">
                 <div>
                     <h1 class="site-title">Travis Woolston</h1>
-                    <p class="tagline">Game Developer • UE5 • Unity • AI/Gameplay</p>
+                    <p class="tagline">Gameplay &amp; AI Programmer — Unreal Engine 5 / C++</p>
                 </div>
             </div>
             <nav class="site-nav" aria-label="Primary">
+                <a href="#alumni-arcade">Alumni Arcade</a>
                 <a href="#projects">Projects</a>
                 <a href="#automatic-planet">Automatic Planet</a>
                 <a href="#experience">Experience</a>
@@ -36,10 +37,11 @@
         <div class="hero">
             <div class="container">
                 <div class="hero-copy">
-                    <h2>Designing systems, building worlds.</h2>
-                    <p>I craft responsive gameplay systems, AI, and automation-focused mechanics. Currently developing <strong>Automatic Planet</strong>, an automation puzzle game inspired by Opus Magnum and Factorio.</p>
+                    <h2>Gameplay &amp; AI Programmer — Unreal Engine 5 / C++</h2>
+                    <p>I build enemy and boss AI, player systems, and level mechanics in Unreal Engine 5 C++ and Blueprints. I was Gameplay &amp; AI Programmer on three team games in the SNHU-funded Alumni Arcade program, and I also develop <strong>Automatic Planet</strong>, an automation puzzle game inspired by Opus Magnum and Factorio.</p>
                     <div class="hero-ctas">
-                        <a class="btn" href="#projects">View Projects</a>
+                        <a class="btn" href="#alumni-arcade">View Featured Work</a>
+                        <a class="btn btn-secondary" href="workexperience/Travis_Woolston_Resume_GameDev.pdf">Download Resume</a>
                         <a class="btn btn-secondary" href="https://www.youtube.com/@traviswoolston8108" target="_blank" rel="noopener">Watch Devlogs</a>
                     </div>
                 </div>
@@ -48,7 +50,146 @@
     </header>
 
     <main id="content">
-        <!-- Automatic Planet section with playlist embed (moved above Projects) -->
+        <section id="skills" class="skills section-tight" aria-label="Skills">
+            <div class="container">
+                <ul class="skills-strip">
+                    <li>UE5 C++</li>
+                    <li>Blueprints</li>
+                    <li>Behavior Trees</li>
+                    <li>State Trees</li>
+                    <li>Enhanced Input</li>
+                    <li>Animation Blueprints</li>
+                    <li>Unity/C#</li>
+                    <li>LibGDX/Java</li>
+                    <li>Cocos2d-x/C++</li>
+                    <li>Defold/Lua</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="alumni-arcade" class="alumni-arcade section">
+            <div class="container">
+                <h2 class="section-title">Alumni Arcade — UE5 Team Projects (2026)</h2>
+                <p class="section-lead">Gameplay &amp; AI Programmer on three Unreal Engine 5 games in the SNHU-funded Alumni Arcade program, where graduates build games in UE5. Each title below is a working title.</p>
+
+                <article class="card case-study">
+                    <div class="case-media">
+                        <img src="images/alumni-arcade/duality-poster.jpg" alt="Gameplay screenshot from Duality of Light and Dark: a glowing orb mid portal transition on a tiled platform against a red sky, with purple crystalline structures on either side.">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Duality of Light and Dark <span class="working-title">(working title)</span></h3>
+                        <p class="project-meta">Gameplay &amp; AI Programmer • UE5, C++/Blueprints • Jul–Oct 2026</p>
+                        <p class="project-desc">A game where the player flips between a light and a dark dimension.</p>
+                        <h4 class="built-heading">What I built</h4>
+                        <ul class="built-list">
+                            <li>Shadow Stalker AI with dual-surface navigation, custom behavior-tree tasks, and spline patrols that keep working upside-down through dimension flips. Also the Echo and Prismatic Sentry enemies.</li>
+                            <li>Dimension flip and portal system: camera and portal transitions, per-orb camera memory, a GameDirector editor tool, timeline effects, and a fresnel portal material.</li>
+                            <li>Luminary boss class and State Tree with wave and phase modifiers, pylon-triggered phases, and dev skip hotkeys.</li>
+                            <li>Magnetic platforms, seesaws, trapdoors, platform velocity inheritance, and ball-rolling orb physics.</li>
+                            <li>Traced a hitch on every flip to 1,674 tagged actors and fixed it at the prop blueprint. Merged wall meshes for performance.</li>
+                            <li>Docs: game loop and director architecture, a StateTree primer, and a boss integration guide.</li>
+                        </ul>
+                        <div class="clip-grid">
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/duality-shadow-stalker-pathing-poster.jpg">
+                                    <source src="videos/alumni-arcade/duality-shadow-stalker-pathing.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Shadow Stalker pathing and dual-surface navigation</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/duality-dimension-flip-poster.jpg">
+                                    <source src="videos/alumni-arcade/duality-dimension-flip.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Dimension flip between the light and dark sides</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/duality-luminary-merged-meshes-poster.jpg">
+                                    <source src="videos/alumni-arcade/duality-luminary-merged-meshes.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Luminary arena — merged wall meshes for performance</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card case-study">
+                    <div class="case-media">
+                        <img src="images/alumni-arcade/mira-poster.jpg" alt="Gameplay screenshot from Mira and the Mirror Staff: a top-down dungeon room where Mira faces an orange slime enemy on a stone-tile floor.">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Mira and the Mirror Staff <span class="working-title">(working title)</span></h3>
+                        <p class="project-meta">Gameplay &amp; AI Programmer • UE5 metroidvania, C++-first • Jul–Nov 2026</p>
+                        <h4 class="built-heading">What I built</h4>
+                        <ul class="built-list">
+                            <li>Slime, skeleton, and dragon enemy AI using behavior trees (hop, chase, and align behaviors, line-of-sight checks, abort-mode tuning), plus a boss variant system.</li>
+                            <li>Ported the player controller from Blueprint event graphs to C++, including copied-magic handling and mana cooldowns.</li>
+                            <li>AoE magic spawning, and a save system for pickups, mana upgrades, and boss state across zones.</li>
+                            <li>Fixed duplicate damage ticks (per-instance damaged-actor set), an attack-spam bug that wiped copied magic, wall-penetration and line-of-sight bugs, a slime-boss stall (failsafe timer), and skeletons walking off ledges (nav mesh and collision).</li>
+                        </ul>
+                        <div class="clip-grid">
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/mira-slime-boss-nav-fix-poster.jpg">
+                                    <source src="videos/alumni-arcade/mira-slime-boss-nav-fix.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Slime boss navigation fix</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/mira-enemy-stuck-fix-poster.jpg">
+                                    <source src="videos/alumni-arcade/mira-enemy-stuck-fix.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Enemy stuck fix — nav mesh and collision</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/mira-attack-anim-play-rate-poster.jpg">
+                                    <source src="videos/alumni-arcade/mira-attack-anim-play-rate.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Attack animation play-rate tuning</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card case-study">
+                    <div class="case-media">
+                        <img src="images/alumni-arcade/pirate-cove-poster.jpg" alt="Gameplay screenshot from Pirate Cove: the player character stands in turquoise water beside a sailing ship, with a palm-lined cove and a parchment minimap in the corner.">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Pirate Cove <span class="working-title">(working title)</span></h3>
+                        <p class="project-meta">Gameplay &amp; AI Programmer • UE5, C++/Blueprints • Aug–Nov 2026</p>
+                        <h4 class="built-heading">What I built</h4>
+                        <ul class="built-list">
+                            <li>Multi-phase Parrot Pirate boss with flight, charge, and dive-bomb attacks. Also the Bone Pirate, Swashbuckler, and Ship Captain enemies.</li>
+                            <li>Town Guard squad AI with formation following, RVO avoidance, and patrol and spawn points.</li>
+                            <li>Checkpoint and world-state reset (enemy positions, behavior trees, boss phase, pickups), lock-on targeting, grapple aiming, and knockback.</li>
+                            <li>A control-prompt UI that reads Enhanced Input bindings, so prompts stay correct after rebinding.</li>
+                            <li>Enemy animation blueprints with Mixamo animations, weapon sockets, two-bone IK, and C++ anim notifies, plus gun VFX and SFX.</li>
+                        </ul>
+                        <div class="clip-grid">
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/pirate-cove-parrot-knockback-poster.jpg">
+                                    <source src="videos/alumni-arcade/pirate-cove-parrot-knockback.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Parrot Pirate knockback</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/pirate-cove-parrot-wing-anim-poster.jpg">
+                                    <source src="videos/alumni-arcade/pirate-cove-parrot-wing-anim.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Parrot Pirate wing animation</figcaption>
+                            </figure>
+                            <figure>
+                                <video controls muted playsinline preload="metadata" poster="images/alumni-arcade/pirate-cove-parrot-sfx-poster.jpg">
+                                    <source src="videos/alumni-arcade/pirate-cove-parrot-sfx.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Parrot Pirate gun VFX and SFX</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <section id="automatic-planet" class="automatic-planet section">
             <div class="container">
                 <h2 class="section-title">Automatic Planet — Devlog Playlist</h2>
@@ -147,12 +288,11 @@
             </div>
         </section>
 
-        
-
         <section id="about" class="about section">
             <div class="container">
                 <h2 class="section-title">About</h2>
                 <p>I specialize in gameplay programming, AI/behavior systems, and animation integration across Unreal Engine 5 and Unity. I enjoy building clear, extensible systems with strong player feel—especially in automation and simulation spaces.</p>
+                <p>I currently work as a Gameplay Programmer and Level Designer at micro1, and I recently finished three UE5 team games in the SNHU-funded Alumni Arcade program. Before that I was a full-stack engineer at Asurion and a Unity/C# engineer on the Gateway Adventure App. I hold a B.S. in Computer Science from Southern New Hampshire University.</p>
             </div>
         </section>
 
@@ -162,8 +302,17 @@
                 <div class="exp-grid">
                     <div class="exp-highlights card">
                         <div class="card-body">
-                            <h3 class="project-title">Highlights from Projects</h3>
+                            <h3 class="project-title">Professional Experience</h3>
                             <ul class="exp-list">
+                                <li><strong>Gameplay Programmer / Level Designer</strong> — micro1 (May 2026–present)</li>
+                                <li><strong>Gameplay &amp; AI Programmer</strong> — Alumni Arcade (SNHU Alumni Project), UE5 team games (Jul–Nov 2026)</li>
+                                <li><strong>Full-Stack Engineer</strong> — Asurion (Mar 2022–Oct 2025)</li>
+                                <li><strong>Unity/C# Engineer</strong> — Gateway Adventure App (2023–2025)</li>
+                                <li><strong>Education</strong> — B.S. in Computer Science, Southern New Hampshire University</li>
+                            </ul>
+                            <h3 class="project-title" style="margin-top:22px;">Highlights from Projects</h3>
+                            <ul class="exp-list">
+                                <li><strong>Gameplay &amp; AI Programmer</strong> — Alumni Arcade (UE5): enemy and boss AI, player systems, and level mechanics on Duality of Light and Dark, Mira and the Mirror Staff, and Pirate Cove.</li>
                                 <li><strong>Lead Programmer, AI Developer</strong> — Virus Hunter (UE5): core gameplay systems, AI behavior trees, animation integration.</li>
                                 <li><strong>Lead Programmer, Gameplay Designer</strong> — Data Diver (UE5): gameplay architecture, player feel, encounter pacing.</li>
                                 <li><strong>Solo Developer</strong> — Automatic Planet: automation puzzle design and systems engineering.</li>
@@ -178,12 +327,12 @@
                             <h3 class="project-title">Resume (PDF)</h3>
                             <p class="project-desc">View or download the complete resume. If the inline viewer doesn’t load, use the download button below.</p>
                             <div class="doc-embed">
-                                <object data="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" type="application/pdf" aria-label="Travis Woolston Resume">
-                                    <p>PDF preview not available. <a href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
+                                <object data="workexperience/Travis_Woolston_Resume_GameDev.pdf" type="application/pdf" aria-label="Travis Woolston Resume">
+                                    <p>PDF preview not available. <a href="workexperience/Travis_Woolston_Resume_GameDev.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
                                 </object>
                             </div>
                             <div class="project-actions" style="margin-top:12px;">
-                                <a class="btn btn-large" href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+                                <a class="btn btn-large" href="workexperience/Travis_Woolston_Resume_GameDev.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
                             </div>
                         </div>
                     </div>
@@ -195,9 +344,12 @@
             <div class="container">
                 <h2 class="section-title">Links</h2>
                 <div class="contact-links">
-                    <a href="https://kratum.itch.io/" target="_blank" rel="noopener" class="btn btn-large">itch.io Profile</a>
+                    <a href="https://github.com/TravisWoolston" target="_blank" rel="noopener" class="btn btn-large">GitHub</a>
+                    <a href="https://www.behance.net/traviswwoolston" target="_blank" rel="noopener" class="btn btn-large">Behance</a>
                     <a href="https://www.youtube.com/@traviswoolston8108" target="_blank" rel="noopener" class="btn btn-large">YouTube — Devlogs</a>
-                    <a href="workexperience/Travis%20Woolston%20Resume%20Multipages.pdf" target="_blank" rel="noopener" class="btn btn-large">Resume (PDF)</a>
+                    <a href="https://www.linkedin.com/in/traviswoolston/" target="_blank" rel="noopener" class="btn btn-large">LinkedIn</a>
+                    <a href="https://kratum.itch.io/" target="_blank" rel="noopener" class="btn btn-large">itch.io Profile</a>
+                    <a href="workexperience/Travis_Woolston_Resume_GameDev.pdf" target="_blank" rel="noopener" class="btn btn-large">Resume (PDF)</a>
                 </div>
             </div>
         </section>
@@ -205,7 +357,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Travis Woolston. All rights reserved.</p>
+            <p>&copy; 2026 Travis Woolston. All rights reserved.</p>
         </div>
     </footer>
 </body>
